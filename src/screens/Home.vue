@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container d-flex flex-column justify-content-start align-items-center main-content mt-5">
         <p>Home</p>
         <p>I love Hailey E. Young!</p>
         <TempComponent />
