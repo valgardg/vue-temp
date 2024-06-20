@@ -1,10 +1,18 @@
 <template>
     <div>
         <p>This is a temp component!</p>
+        <p>{{ tempCount }}</p>
+        <button class="btn btn-primary" @click="increaseTempCount">+</button>
+        <button class="btn btn-warning" @click="decreaseTempCount">-</button>
     </div>
 </template>
 
 <script setup lang="ts">
+import { storeToRefs } from 'pinia';
+import { useTempStore } from '@/stores/TempStore';
+
+const { increaseTempCount, decreaseTempCount } = useTempStore();
+const { tempCount } = storeToRefs(useTempStore());
 </script>
 
 <style scoped>
