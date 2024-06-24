@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="border p-4">
         <p>This is a temp component!</p>
         <p>{{ tempCount }}</p>
         <button class="btn btn-primary" @click="increaseTempCount">+</button>
